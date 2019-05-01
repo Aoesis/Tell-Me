@@ -10,9 +10,7 @@ import sys
 import bluetooth
 import serial 
 import subprocess
-#notas: posible boton de reinicio, contar para un else en (1) donde se salga del while true
 
-#subprocess.call(['python','BTconect.py'])
 os.system("python BTconect.py &")
 bs=serial.Serial("/dev/rfcomm0",baudrate=9600)
 
